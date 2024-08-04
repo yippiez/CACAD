@@ -32,6 +32,18 @@ const orbit = new OrbitControls(camera, renderer.domElement);
 camera.position.z = 15;
 orbit.update();
 
+const light = new THREE.AmbientLight(0x404040); // soft white light
+scene.add(light);
+
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
+directionalLight.position.z = 2
+scene.add(directionalLight)
+
+const directionalLight2 = new THREE.DirectionalLight(0xffffff, 1)
+directionalLight2.position.z = -3
+directionalLight2.rotateX(1 / 3);
+scene.add(directionalLight)
+
 // MAIN LOOP
 function mainLoop() {
     renderer.render(scene, camera);

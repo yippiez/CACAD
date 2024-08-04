@@ -79,6 +79,15 @@
     <input id="colorPicker" type="color" value="#ff0000">
   </div>
 
+  <div x-data="{ open: false }" x-on:click="open = ! open" :class="open ? 'side-panel-enlarged' : 'side-panel-reduced'"
+    class="side-panel side-panel-transition-width duration-300">
+
+    <div x-on:click.stop :class="open ? 'side-panel-content-enlarged' : 'side-panel-content-reduced'"
+      class="side-panel-content side-panel-transition-width duration-300">
+    </div>
+
+  </div>
+
   <script type="module" src="cacad.js"></script>
 </body>
 

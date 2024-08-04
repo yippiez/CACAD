@@ -105,3 +105,48 @@ ol {
     height: 100%;
     border: none;
 }
+
+.side-panel {
+    width: 15px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.side-panel:hover {
+    background-color: gray;
+}
+
+.side-panel-enlarged {
+    width: 150px;
+}
+
+.side-panel-reduced {
+    width: 15px;
+}
+
+.side-panel-transition-width {
+    transition: width 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+.side-panel-content {
+    width: 135px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.side-panel-content-enlarged {
+    width: 135px;
+}
+
+.side-panel-content-reduced {
+    width: 0px;
+}

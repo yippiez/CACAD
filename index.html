@@ -88,6 +88,12 @@
 
   </div>
 
+  <div x-data="{playing: false}" x-on:click="playing=!playing" class="play-pause-button">
+    <i x-show="playing" class="fa-solid fa-pause"></i>
+    <i x-show="!playing" class="fa-solid fa-play"></i>
+  </div>
+
+
   <script type="module" src="cacad.js"></script>
 </body>
 
